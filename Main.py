@@ -67,9 +67,9 @@ def meter_dashboard(mtid: str):
 
         # ---------- POWER FACTOR ---------- #
 
-        avg_pf = round(df["Avg_PF"].mean(), 3)
-        max_pf = round(df["Avg_PF"].max(), 3)
-        min_pf = round(df["Avg_PF"].min(), 3)
+        avg_pf = round(df["Avg_PF"].mean(), 2)
+        max_pf = round(df["Avg_PF"].max(), 2)
+        min_pf = round(df["Avg_PF"].min(), 2)
 
         if avg_pf >= 0.95:
             pf_status = "Good"
